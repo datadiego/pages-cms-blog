@@ -1,5 +1,6 @@
 ---
 title: Introducción a las bases de datos relacionales
+date: 2025-01-19
 draft: false
 tags:
   - bbdd

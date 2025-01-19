@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-  key: About Me
+  key: Sobre mi
   order: 3
 ---
 # About Me

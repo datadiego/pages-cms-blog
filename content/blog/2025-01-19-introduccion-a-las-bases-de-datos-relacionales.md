@@ -5,8 +5,6 @@ draft: false
 tags:
   - bbdd
 ---
-# **Introducción a las bases de datos relacionales**
-
 ## **¿Qué es una base de datos relacional?**
 
 En una base de datos relacional abandonamos el modelo clásico de almacenamiento de datos en ficheros y pasamos a almacenar los datos en tablas. Cada tabla es un conjunto de datos que se organiza en filas y columnas. Las filas representan los registros y las columnas los campos de cada registro.

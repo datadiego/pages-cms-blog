@@ -30,7 +30,7 @@
 			"id": "https://example.com/blog/2025-01-19-comandos-linux-cd/",
 			"url": "https://example.com/blog/2025-01-19-comandos-linux-cd/",
 			"title": "Comandos Linux: cd",
-			"content_html": "<p>/</p>\n",
+			"content_html": "<p>Testeando codigo:</p>\n<pre class=\"language-javascript\" tabindex=\"0\"><code class=\"language-javascript\"><span class=\"token keyword\">const</span> a <span class=\"token operator\">=</span> <span class=\"token number\">5</span>\n<span class=\"token keyword\">const</span> b <span class=\"token operator\">=</span> <span class=\"token number\">10</span>\n<span class=\"token keyword\">const</span> c <span class=\"token operator\">=</span> a <span class=\"token operator\">+</span> b\n\nconsole<span class=\"token punctuation\">.</span><span class=\"token function\">log</span><span class=\"token punctuation\">(</span>c<span class=\"token punctuation\">)</span> <span class=\"token comment\">//15</span></code></pre>\n<p>Testeando headers:</p>\n<h1 id=\"h1\" tabindex=\"-1\">H1 <a class=\"header-anchor\" href=\"https://example.com/blog/2025-01-19-comandos-linux-cd/\">#</a></h1>\n<h2 id=\"h2\" tabindex=\"-1\">H2 <a class=\"header-anchor\" href=\"https://example.com/blog/2025-01-19-comandos-linux-cd/\">#</a></h2>\n<h3 id=\"h3\" tabindex=\"-1\">H3 <a class=\"header-anchor\" href=\"https://example.com/blog/2025-01-19-comandos-linux-cd/\">#</a></h3>\n<h1 id=\"1\" tabindex=\"-1\">1 <a class=\"header-anchor\" href=\"https://example.com/blog/2025-01-19-comandos-linux-cd/\">#</a></h1>\n<p><code>const a = 5</code></p>\n<p><code>const b = 10</code></p>\n",
 			"date_published": "2025-01-19T00:00:00Z"
 		}
 		

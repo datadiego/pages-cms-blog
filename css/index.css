@@ -579,6 +579,6 @@ nav ul li{
 }
 
 code {
-	background: var(--background-color-alt);
-	
+	background: gray;
+
 }

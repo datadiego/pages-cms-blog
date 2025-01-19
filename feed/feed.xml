@@ -42,14 +42,14 @@
 &lt;p&gt;cd /etc/ssh&lt;/p&gt;
 &lt;p&gt;cd /var/log&lt;/p&gt;
 &lt;p&gt;Además, podemos ir más arriba en el arbol del directorio en el que nos encontramos:&lt;/p&gt;
-&lt;p&gt;```bash&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;user@~&lt;/em&gt; pwd&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;/home/user&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;user@~&lt;/em&gt; cd Escritorio/&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;user@~/Escritorio&lt;/em&gt; cd ..&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;user@~&lt;/em&gt; pwd&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;/home/user&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;```&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd test
+
+cd
+
+cd
+
+cd
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Además, en caso de que queramos volver al directorio anterior, podemos usar el comando cd -:&lt;/p&gt;
 &lt;p&gt;```bash&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;user@~&lt;/em&gt; pwd&lt;/p&gt;

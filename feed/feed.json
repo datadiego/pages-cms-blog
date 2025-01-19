@@ -1,7 +1,7 @@
 {
 	"version": "https://jsonfeed.org/version/1.1",
-	"title": "Hypernull",
-	"language": "en",
+	"title": "notnull",
+	"language": "es-ES",
 	"home_page_url": "https://example.com/",
 	"feed_url": "https://example.com/feed/feed.json",
 	"description": "I am writing about my experiences as a naval navel-gazer.",

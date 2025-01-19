@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://example.com/blog/2025-01-19-comandos-linux-cd/</loc>
+		<lastmod>2025-01-19</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/blog/2025-01-19-test/</loc>
 		<lastmod>2025-01-19</lastmod>
 	</url>
@@ -32,12 +37,17 @@
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/testing/</loc>
+		<loc>https://example.com/tags/test/</loc>
 		<lastmod>2025-01-19</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/test/</loc>
+		<loc>https://example.com/tags/comandos-linux/</loc>
+		<lastmod>2025-01-19</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/testing/</loc>
 		<lastmod>2025-01-19</lastmod>
 	</url>
 </urlset>

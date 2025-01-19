@@ -25,6 +25,14 @@
 			"content_html": "<p>algo por aqui</p>\n",
 			"date_published": "2025-01-19T00:00:00Z"
 		}
+		,
+		{
+			"id": "https://example.com/blog/2025-01-19-comandos-linux-cd/",
+			"url": "https://example.com/blog/2025-01-19-comandos-linux-cd/",
+			"title": "Comandos Linux: cd",
+			"content_html": "<p>El comando cd nos permite cambiar el directorio de trabajo en el que nos encontramos.</p>\n<p>Podemos usarlo con rutas relativas:</p>\n<p>cd ./Escritorio</p>\n<p>cd ./mi-proyecto</p>\n<p>Pero tambien absolutas:</p>\n<p>cd /etc/ssh</p>\n<p>cd /var/log</p>\n<p>Además, podemos ir más arriba en el arbol del directorio en el que nos encontramos:</p>\n<p>```bash</p>\n<p><em>user@~</em> pwd</p>\n<p><em>/home/user</em></p>\n<p><em>user@~</em> cd Escritorio/</p>\n<p><em>user@~/Escritorio</em> cd ..</p>\n<p><em>user@~</em> pwd</p>\n<p><em>/home/user</em></p>\n<p>```</p>\n<p>Además, en caso de que queramos volver al directorio anterior, podemos usar el comando cd -:</p>\n<p>```bash</p>\n<p><em>user@~</em> pwd</p>\n<p><em>/home/user</em></p>\n<p><em>user@~</em> cd /tmp</p>\n<p><em>user@/tmp</em> pwd</p>\n<p><em>/tmp</em></p>\n<p><em>user@/tmp</em> cd -</p>\n<p><em>user@~</em> pwd</p>\n<p><em>/home/user</em></p>\n<p>```</p>\n",
+			"date_published": "2025-01-19T00:00:00Z"
+		}
 		
 	]
 }

@@ -30,6 +30,16 @@
 	</entry>
 	
 	<entry>
+		<title>Comandos Linux: ls</title>
+		<link href="https://example.com/blog/2025-01-19-comandos-linux-ls/"/>
+		<updated>2025-01-19T00:00:00Z</updated>
+		<id>https://example.com/blog/2025-01-19-comandos-linux-ls/</id>
+		<content type="html">&lt;p&gt;Aqui otro comanditoooo&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ls -la&lt;/code&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Comandos Linux: cd</title>
 		<link href="https://example.com/blog/2025-01-19-comandos-linux-cd/"/>
 		<updated>2025-01-19T00:00:00Z</updated>

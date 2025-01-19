@@ -7,6 +7,11 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/blog/2025-01-19-comandos-linux-ls/</loc>
+		<lastmod>2025-01-19</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/blog/2025-01-19-test/</loc>
 		<lastmod>2025-01-19</lastmod>
 	</url>
@@ -42,12 +47,12 @@
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/testing/</loc>
+		<loc>https://example.com/tags/test/</loc>
 		<lastmod>2025-01-19</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/test/</loc>
+		<loc>https://example.com/tags/testing/</loc>
 		<lastmod>2025-01-19</lastmod>
 	</url>
 </urlset>

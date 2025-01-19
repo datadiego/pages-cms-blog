@@ -3,29 +3,178 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>notnull</title>
+		<title>Introducción a las bases de datos relacionales</title>
 		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="notnull">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="notnull">
 		
-		<style>.postlist { counter-reset: start-from 4 }
-/* Message Box */
-.message-box {
-	--color-message-box: #ffc;
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
 
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
 	display: block;
-	background-color: var(--color-message-box);
-	color: var(--color-gray-90);
-	padding: 1em 0.625em; /* 16px 10px /16 */
-}
-.message-box ol {
-	margin-top: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-	.message-box {
-		--color-message-box: #082840;
-	}
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
 }
 * { box-sizing: border-box; }
 @import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
@@ -616,7 +765,7 @@ nav ul li{
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Inicio</a></li>
+					<li class="nav-item"><a href="/">Inicio</a></li>
 					<li class="nav-item"><a href="/blog/">Blog</a></li>
 					<li class="nav-item"><a href="/about/">Sobre mi</a></li>
 				</ul>
@@ -624,60 +773,78 @@ nav ul li{
 		</header>
 
 		<main id="skip">
-			<!-- Delete this message, it will also remove the component CSS from the bundle -->
+			
+<h1>Introducción a las bases de datos relacionales</h1>
 
-
-
-<pre class="centered">
-                __              ____
-   ____  ____  / /_____  __  __/ / /
-  / __ \/ __ \/ __/ __ \/ / / / / / 
- / / / / /_/ / /_/ / / / /_/ / / /  
-/_/ /_/\____/\__/_/ /_/\__,_/_/_/   
-</pre>
-<!-- Stop deleting -->
-
-
-
-<h2>Últimos 3 Posts</h2>
-
-
-
-
-<ul reversed class="postlist">
-
-	<li class="postlist-item">
-		<a href="/blog/2025-01-19-test2/" class="postlist-link">&gt;test2</a>
-		<span>/</span>
-		<time class="postlist-date" datetime="2025-01-19">enero 2025</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/blog/2025-01-19-test/" class="postlist-link">&gt;test</a>
-		<span>/</span>
-		<time class="postlist-date" datetime="2025-01-19">enero 2025</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/" class="postlist-link">&gt;Introducción a las bases de datos relacionales</a>
-		<span>/</span>
-		<time class="postlist-date" datetime="2025-01-19">enero 2025</time>
-	</li>
-
+<ul class="post-metadata">
+	<li><time datetime="2025-01-19">19 enero 2025</time></li>
+	<li><a href="/tags/bbdd/" class="post-tag">bbdd</a></li>
 </ul>
 
+<h1 id="introduccion-a-las-bases-de-datos-relacionales" tabindex="-1"><strong>Introducción a las bases de datos relacionales</strong> <a class="header-anchor" href="#introduccion-a-las-bases-de-datos-relacionales">#</a></h1>
+<h2 id="que-es-una-base-de-datos-relacional" tabindex="-1"><strong>¿Qué es una base de datos relacional?</strong> <a class="header-anchor" href="#que-es-una-base-de-datos-relacional">#</a></h2>
+<p>En una base de datos relacional abandonamos el modelo clásico de almacenamiento de datos en ficheros y pasamos a almacenar los datos en tablas. Cada tabla es un conjunto de datos que se organiza en filas y columnas. Las filas representan los registros y las columnas los campos de cada registro.</p>
+<p>Lo importante no es tanto su estructura, sino la relación que existen entre las tablas. De ahí el nombre de base de datos relacionales.</p>
+<h2 id="tipos-de-datos" tabindex="-1"><strong>Tipos de datos</strong> <a class="header-anchor" href="#tipos-de-datos">#</a></h2>
+<p>Las bases de datos relacionales poseen tipos de datos que se pueden almacenar en las tablas.</p>
+<h3 id="tipos-de-datos-numericos" tabindex="-1"><strong>Tipos de datos numéricos</strong> <a class="header-anchor" href="#tipos-de-datos-numericos">#</a></h3>
+<p>- <code>INT</code>: Números enteros.</p>
+<p>- <code>DECIMAL</code>: Números decimales.</p>
+<p>- <code>NUMERIC</code>: Números decimales.</p>
+<h3 id="tipos-de-datos-de-texto" tabindex="-1"><strong>Tipos de datos de texto</strong> <a class="header-anchor" href="#tipos-de-datos-de-texto">#</a></h3>
+<p>- <code>CHAR</code>: Cadena de texto de longitud fija.</p>
+<p>- <code>VARCHAR</code>: Cadena de texto de longitud variable.</p>
+<p>- <code>TEXT</code>: Cadena de texto de longitud variable.</p>
+<h3 id="tipos-de-datos-de-fecha-y-hora" tabindex="-1"><strong>Tipos de datos de fecha y hora</strong> <a class="header-anchor" href="#tipos-de-datos-de-fecha-y-hora">#</a></h3>
+<p>- <code>DATE</code>: Fecha.</p>
+<p>- <code>TIME</code>: Hora.</p>
+<p>- <code>DATETIME</code>: Fecha y hora.</p>
+<p>- <code>TIMESTAMP</code>: Fecha y hora.</p>
+<h3 id="otros-datos" tabindex="-1"><strong>Otros datos</strong> <a class="header-anchor" href="#otros-datos">#</a></h3>
+<p>- <code>BLOB</code>: Datos binarios.</p>
+<p>- <code>ENUM</code>: Lista de valores.</p>
+<p>- <code>SET</code>: Conjunto de valores.</p>
+<p>- <code>JSON</code>: Datos en formato JSON.</p>
+<h2 id="caracteristicas-de-los-tipos-de-datos" tabindex="-1"><strong>Características de los tipos de datos</strong> <a class="header-anchor" href="#caracteristicas-de-los-tipos-de-datos">#</a></h2>
+<h3 id="no-nulidad" tabindex="-1"><strong>No-nulidad</strong> <a class="header-anchor" href="#no-nulidad">#</a></h3>
+<p>Indica si un campo puede tener valores nulos o no, es decir, si el campo debe tener un valor o puede estar vacío.</p>
+<h3 id="unicidad" tabindex="-1"><strong>Unicidad</strong> <a class="header-anchor" href="#unicidad">#</a></h3>
+<p>Indica si un campo debe tener valores únicos, es decir, si el campo puede tener valores repetidos o no.</p>
+<h3 id="clave-primaria" tabindex="-1"><strong>Clave primaria</strong> <a class="header-anchor" href="#clave-primaria">#</a></h3>
+<p>Es un campo o conjunto de campos que identifica de forma única a cada registro de una tabla. Una clave primaria <strong>siempre</strong> debe ser única y no nula.</p>
+<h3 id="clave-foranea" tabindex="-1"><strong>Clave foránea</strong> <a class="header-anchor" href="#clave-foranea">#</a></h3>
+<p>Es un campo que se usa para establecer relaciones entre dos tablas. La clave foránea en una tabla es la clave primaria de otra tabla.</p>
+<h3 id="autoincremento" tabindex="-1"><strong>Autoincremento</strong> <a class="header-anchor" href="#autoincremento">#</a></h3>
+<p>Indica si un campo se incrementa automáticamente en cada inserción de un nuevo registro.</p>
+<h2 id="clave-primaria-1" tabindex="-1"><strong>Clave primaria</strong> <a class="header-anchor" href="#clave-primaria-1">#</a></h2>
+<p>Una clave primaria es un campo que identifica de forma única a cada registro de una tabla. Una clave primaria no puede tener valores repetidos, y no puede ser nula.</p>
+<p>Las claves primarias son <strong>muy importantes</strong> para identificar los registros de una tabla.</p>
+<p>Considera una tabla de alumnos con las siguentes columnas:</p>
+<p>- <code>id</code>: clave primaria, numero</p>
+<p>- <code>nombre</code>: texto</p>
+<p>- <code>password</code>: texto</p>
+<p>En esta tabla, el campo <code>id</code> es la clave primaria, ya que identifica de forma única a cada registro de la tabla.</p>
+<h2 id="clave-foranea-1" tabindex="-1"><strong>Clave foránea</strong> <a class="header-anchor" href="#clave-foranea-1">#</a></h2>
+<p>Una clave foránea es un campo que se utiliza para relacionar dos tablas. Una clave foránea puede tener valores repetidos, y puede ser nula.</p>
+<p>Piensa en la tabla anterior:</p>
+<p>- <code>usuario_id</code>: clave primaria, numero</p>
+<p>- <code>nombre</code>: texto</p>
+<p>- <code>password</code>: texto</p>
+<p>- <code>pedido_id</code>: clave foránea, numero</p>
+<p>Piensa que tenemos otra tabla de pedidos con las siguientes columnas:</p>
+<p>- <code>pedido_id</code>: clave primaria, numero</p>
+<p>- <code>usuario_id</code>: clave foránea, numero</p>
+<p>- <code>producto</code>: texto</p>
+<p>- <code>cantidad</code>: numero</p>
+<p>En esta tabla, el campo <code>usuario_id</code> es una clave foránea, ya que se utiliza para relacionar las dos tablas, al igual que el campo <code>pedido_id</code>, que es la clave primaria de la tabla de pedidos y la clave foránea de la tabla de usuarios.</p>
 
-
-
-
-
-
-
+<ul class="links-nextprev"><li>Next: <a href="/blog/2025-01-19-test/">test</a></li>
+</ul>
 
 		</main>
 
 		<footer></footer>
 
-		<!-- Current page: / -->
+		<!-- Current page: /blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/ -->
 	</body>
 </html>

@@ -28,4 +28,68 @@
 		<content type="html">&lt;p&gt;algo por aqui&lt;/p&gt;
 </content>
 	</entry>
+	
+	<entry>
+		<title>Introducción a las bases de datos relacionales</title>
+		<link href="https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/"/>
+		<updated>2025-01-19T00:00:00Z</updated>
+		<id>https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/</id>
+		<content type="html">&lt;h1 id=&quot;introduccion-a-las-bases-de-datos-relacionales&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducción a las bases de datos relacionales&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;que-es-una-base-de-datos-relacional&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;¿Qué es una base de datos relacional?&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;En una base de datos relacional abandonamos el modelo clásico de almacenamiento de datos en ficheros y pasamos a almacenar los datos en tablas. Cada tabla es un conjunto de datos que se organiza en filas y columnas. Las filas representan los registros y las columnas los campos de cada registro.&lt;/p&gt;
+&lt;p&gt;Lo importante no es tanto su estructura, sino la relación que existen entre las tablas. De ahí el nombre de base de datos relacionales.&lt;/p&gt;
+&lt;h2 id=&quot;tipos-de-datos&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Tipos de datos&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Las bases de datos relacionales poseen tipos de datos que se pueden almacenar en las tablas.&lt;/p&gt;
+&lt;h3 id=&quot;tipos-de-datos-numericos&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Tipos de datos numéricos&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;- &lt;code&gt;INT&lt;/code&gt;: Números enteros.&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;DECIMAL&lt;/code&gt;: Números decimales.&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;NUMERIC&lt;/code&gt;: Números decimales.&lt;/p&gt;
+&lt;h3 id=&quot;tipos-de-datos-de-texto&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Tipos de datos de texto&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;- &lt;code&gt;CHAR&lt;/code&gt;: Cadena de texto de longitud fija.&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;VARCHAR&lt;/code&gt;: Cadena de texto de longitud variable.&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;TEXT&lt;/code&gt;: Cadena de texto de longitud variable.&lt;/p&gt;
+&lt;h3 id=&quot;tipos-de-datos-de-fecha-y-hora&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Tipos de datos de fecha y hora&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;- &lt;code&gt;DATE&lt;/code&gt;: Fecha.&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;TIME&lt;/code&gt;: Hora.&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;DATETIME&lt;/code&gt;: Fecha y hora.&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;TIMESTAMP&lt;/code&gt;: Fecha y hora.&lt;/p&gt;
+&lt;h3 id=&quot;otros-datos&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Otros datos&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;- &lt;code&gt;BLOB&lt;/code&gt;: Datos binarios.&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;ENUM&lt;/code&gt;: Lista de valores.&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;SET&lt;/code&gt;: Conjunto de valores.&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;JSON&lt;/code&gt;: Datos en formato JSON.&lt;/p&gt;
+&lt;h2 id=&quot;caracteristicas-de-los-tipos-de-datos&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Características de los tipos de datos&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;no-nulidad&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;No-nulidad&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Indica si un campo puede tener valores nulos o no, es decir, si el campo debe tener un valor o puede estar vacío.&lt;/p&gt;
+&lt;h3 id=&quot;unicidad&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Unicidad&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Indica si un campo debe tener valores únicos, es decir, si el campo puede tener valores repetidos o no.&lt;/p&gt;
+&lt;h3 id=&quot;clave-primaria&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Clave primaria&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Es un campo o conjunto de campos que identifica de forma única a cada registro de una tabla. Una clave primaria &lt;strong&gt;siempre&lt;/strong&gt; debe ser única y no nula.&lt;/p&gt;
+&lt;h3 id=&quot;clave-foranea&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Clave foránea&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Es un campo que se usa para establecer relaciones entre dos tablas. La clave foránea en una tabla es la clave primaria de otra tabla.&lt;/p&gt;
+&lt;h3 id=&quot;autoincremento&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Autoincremento&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Indica si un campo se incrementa automáticamente en cada inserción de un nuevo registro.&lt;/p&gt;
+&lt;h2 id=&quot;clave-primaria-1&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Clave primaria&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Una clave primaria es un campo que identifica de forma única a cada registro de una tabla. Una clave primaria no puede tener valores repetidos, y no puede ser nula.&lt;/p&gt;
+&lt;p&gt;Las claves primarias son &lt;strong&gt;muy importantes&lt;/strong&gt; para identificar los registros de una tabla.&lt;/p&gt;
+&lt;p&gt;Considera una tabla de alumnos con las siguentes columnas:&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;id&lt;/code&gt;: clave primaria, numero&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;nombre&lt;/code&gt;: texto&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;password&lt;/code&gt;: texto&lt;/p&gt;
+&lt;p&gt;En esta tabla, el campo &lt;code&gt;id&lt;/code&gt; es la clave primaria, ya que identifica de forma única a cada registro de la tabla.&lt;/p&gt;
+&lt;h2 id=&quot;clave-foranea-1&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Clave foránea&lt;/strong&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Una clave foránea es un campo que se utiliza para relacionar dos tablas. Una clave foránea puede tener valores repetidos, y puede ser nula.&lt;/p&gt;
+&lt;p&gt;Piensa en la tabla anterior:&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;usuario_id&lt;/code&gt;: clave primaria, numero&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;nombre&lt;/code&gt;: texto&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;password&lt;/code&gt;: texto&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;pedido_id&lt;/code&gt;: clave foránea, numero&lt;/p&gt;
+&lt;p&gt;Piensa que tenemos otra tabla de pedidos con las siguientes columnas:&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;pedido_id&lt;/code&gt;: clave primaria, numero&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;usuario_id&lt;/code&gt;: clave foránea, numero&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;producto&lt;/code&gt;: texto&lt;/p&gt;
+&lt;p&gt;- &lt;code&gt;cantidad&lt;/code&gt;: numero&lt;/p&gt;
+&lt;p&gt;En esta tabla, el campo &lt;code&gt;usuario_id&lt;/code&gt; es una clave foránea, ya que se utiliza para relacionar las dos tablas, al igual que el campo &lt;code&gt;pedido_id&lt;/code&gt;, que es la clave primaria de la tabla de pedidos y la clave foránea de la tabla de usuarios.&lt;/p&gt;
+</content>
+	</entry>
 </feed>

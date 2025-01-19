@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://example.com/blog/2025-01-19-introduccion-a-las-bases-de-datos-relacionales/</loc>
+		<lastmod>2025-01-19</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/blog/2025-01-19-test/</loc>
 		<lastmod>2025-01-19</lastmod>
 	</url>
@@ -33,6 +38,11 @@
 	
 	<url>
 		<loc>https://example.com/tags/testing/</loc>
+		<lastmod>2025-01-19</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/bbdd/</loc>
 		<lastmod>2025-01-19</lastmod>
 	</url>
 	

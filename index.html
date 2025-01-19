@@ -582,7 +582,6 @@ nav ul li{
 }
 /* Posts list */
 .postlist {
-	list-style: none;
 	padding: 0;
 	padding-left: 1.5rem;
 }
@@ -597,12 +596,12 @@ nav ul li{
 
 .postlist-link {
 	font-weight: 700;
-	flex-basis: calc(100% - 1.5rem);
 	padding-left: .25em;
 	padding-right: .5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
+	display: inline;
 }
 
 .postlist-item-active .postlist-link {
@@ -617,9 +616,9 @@ nav ul li{
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
-					<li class="nav-item"><a href="/blog/">Archive</a></li>
-					<li class="nav-item"><a href="/about/">About Me</a></li>
+					<li class="nav-item"><a href="/" aria-current="page">Inicio</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/about/">Sobre mi</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -645,19 +644,21 @@ nav ul li{
 
 
 
-<ol reversed class="postlist">
+<ul reversed class="postlist">
 
 	<li class="postlist-item">
-		<a href="/blog/2025-01-19-test2/" class="postlist-link">test2</a>
-		
+		<a href="/blog/2025-01-19-test2/" class="postlist-link">&gt;test2</a>
+		<span>/</span>
+		<time class="postlist-date" datetime="2025-01-19">enero 2025</time>
 	</li>
 
 	<li class="postlist-item">
-		<a href="/blog/2025-01-19-test/" class="postlist-link">test</a>
-		
+		<a href="/blog/2025-01-19-test/" class="postlist-link">&gt;test</a>
+		<span>/</span>
+		<time class="postlist-date" datetime="2025-01-19">enero 2025</time>
 	</li>
 
-</ol>
+</ul>
 
 
 

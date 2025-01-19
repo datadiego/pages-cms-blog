@@ -552,7 +552,6 @@ nav ul li{
 }
 /* Posts list */
 .postlist {
-	list-style: none;
 	padding: 0;
 	padding-left: 1.5rem;
 }
@@ -567,12 +566,12 @@ nav ul li{
 
 .postlist-link {
 	font-weight: 700;
-	flex-basis: calc(100% - 1.5rem);
 	padding-left: .25em;
 	padding-right: .5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
+	display: inline;
 }
 
 .postlist-item-active .postlist-link {

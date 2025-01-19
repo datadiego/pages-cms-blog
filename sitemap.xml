@@ -52,6 +52,11 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/tags/number-2/</loc>
+		<lastmod>2025-01-19</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/tags/another-tag/</loc>
 		<lastmod>2025-01-19</lastmod>
 	</url>
@@ -63,11 +68,6 @@
 	
 	<url>
 		<loc>https://example.com/tags/posts-with-two-tags/</loc>
-		<lastmod>2025-01-19</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/tags/number-2/</loc>
 		<lastmod>2025-01-19</lastmod>
 	</url>
 </urlset>

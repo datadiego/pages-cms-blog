@@ -34,33 +34,7 @@
 		<link href="https://example.com/blog/2025-01-19-comandos-linux-cd/"/>
 		<updated>2025-01-19T00:00:00Z</updated>
 		<id>https://example.com/blog/2025-01-19-comandos-linux-cd/</id>
-		<content type="html">&lt;p&gt;El comando cd nos permite cambiar el directorio de trabajo en el que nos encontramos.&lt;/p&gt;
-&lt;p&gt;Podemos usarlo con rutas relativas:&lt;/p&gt;
-&lt;p&gt;cd ./Escritorio&lt;/p&gt;
-&lt;p&gt;cd ./mi-proyecto&lt;/p&gt;
-&lt;p&gt;Pero tambien absolutas:&lt;/p&gt;
-&lt;p&gt;cd /etc/ssh&lt;/p&gt;
-&lt;p&gt;cd /var/log&lt;/p&gt;
-&lt;p&gt;Además, podemos ir más arriba en el arbol del directorio en el que nos encontramos:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cd test
-
-cd
-
-cd
-
-cd
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Además, en caso de que queramos volver al directorio anterior, podemos usar el comando cd -:&lt;/p&gt;
-&lt;p&gt;```bash&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;user@~&lt;/em&gt; pwd&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;/home/user&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;user@~&lt;/em&gt; cd /tmp&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;user@/tmp&lt;/em&gt; pwd&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;/tmp&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;user@/tmp&lt;/em&gt; cd -&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;user@~&lt;/em&gt; pwd&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;/home/user&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;```&lt;/p&gt;
+		<content type="html">&lt;p&gt;/&lt;/p&gt;
 </content>
 	</entry>
 </feed>

@@ -12,6 +12,11 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/blog/2025-01-19-test2/</loc>
+		<lastmod>2025-01-19</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/about/</loc>
 		<lastmod>2025-01-19</lastmod>
 	</url>
@@ -33,6 +38,11 @@
 	
 	<url>
 		<loc>https://example.com/tags/testing/</loc>
+		<lastmod>2025-01-19</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/test/</loc>
 		<lastmod>2025-01-19</lastmod>
 	</url>
 	
